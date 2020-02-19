@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+    <script class="script" src="scripts/Validation.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles/Styles.css">
+</head>
+<body>
+    <form name="myForm">
+        <h1>&nbsp;&nbsp;&nbsp;FLOWER SHOP ONLINE</h1>
+        <div id="frame"></div>
+        <div>
+            <div class="column">
+                <img src="images/flower.png" alt="Flower" width="160" height="280">
+            </div>
+            <div class="column">
+                <h2>Secure Payment Page</h2>
+                <table width="520">
+                    <tr>
+                        <td><b>Select Language</b></td>
+                        <td>
+                            <select>
+                                <option value="English">English</option>
+                                <option value="English(United States)">English(United States)</option>
+                                <option value="English(United Kingdom)">English(United Kingdom)</option>
+                            </select><br />
+                        </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td>Payment method</td>
+                        <td><b>Visa</b></td>
+                        <td rowspan="3" style="text-align: right">
+                            <img src="images/logo.png" id="imgVisa" alt="Visa" width="60" height="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td><b>Item ordered</b></td>
+                    </tr>
+                    <tr>
+                        <td>Amount</td>
+                        <td><b>&pound;100.00</b></td>
+                    </tr>
+                </table><br />
+                <table class="tab" width="520">
+                    <tr>
+                        <td id="frame" colspan="2">Card details</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">You must fill in fields marked with*</td>
+                    </tr>
+                    <tr>
+                        <td>*Card number</td>
+                        <td>
+                            <input type="text" size="50" name="cardNumber" />
+                            <span id="txtCardNumber" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*<a href="https://www.cvvnumber.com/" style="color: #00004d">Security code</a></td>
+                        <td>
+                            <input type="text" size="15" name="securityCode">
+                            <span id="txtSecurityCode" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Expiry date</td>
+                        <td>
+                            <select class="option" name="month">
+                                <option> </option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select class="option" name="year" >
+                                <option> </option>
+                                <option value="2040">2040</option>
+                                <option value="2039">2039</option>
+                                <option value="2038">2038</option>
+                                <option value="2037">2037</option>
+                                <option value="2036">2036</option>
+                                <option value="2035">2035</option>
+                                <option value="2034">2034</option>
+                                <option value="2033">2033</option>
+                                <option value="2032">2032</option>
+                                <option value="2031">2031</option>
+                                <option value="2030">2030</option>
+                                <option value="2029">2029</option>
+                                <option value="2028">2028</option>
+                                <option value="2027">2027</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                            <span id="txtExpiry" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Cardholder's name</td>
+                        <td>
+                            <input type="text" size="50" name="name" maxlength="20">
+                            <span id="txtName" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="frame" colspan="2">Cardholder details</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">You must fill in fields marked with*</td>
+                    </tr>
+                    <tr>
+                        <td>*Address 1</td>
+                        <td>
+                            <input type="text" size="50" name="address" maxlength="20">
+                            <span id="txtAddress" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Address 2</td>
+                        <td><input type="text" size="50" id="txtAddress" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Address 3</td>
+                        <td><input type="text" size="50" id="txtAddress" maxlength="20"></td>
+                    </tr>
+                    <tr>
+                        <td>*Town/City</td>
+                        <td>
+                            <input type="text" size="50" name="city" maxlength="20">
+                            <span id="txtCity" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Region</td>
+                        <td>
+                            <input type="text" size="50" name="region" maxlength="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Postcode/Zip code</td>
+                        <td>
+                            <input type="text" size="30" name="PostCode">
+                            <span id="txtPostCode" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Country</td>
+                        <td>
+                            <select class="option" name="country">
+                                <option value="">Select a Country</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="France">France</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="India">India</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Russia">Russian Federation</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                            <span id="txtCountry" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Telephone</td>
+                        <td>
+                            <input type="text" size="20" name="Telephone">
+                            <span id="txtTelephone" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;Fax</td>
+                        <td>
+                            <input type="text" size="20" name="Fax">
+                            <span id="txtFax" style="color:red"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Email address</td>
+                        <td>
+                            <input type="text" size="30" name="Email" maxlength="30"><span id="txtEmail" style="color:red"></span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="row">
+                    <div class="column1">
+                        <p><a href="Index.html" style="text-decoration: none; font-size:16px; color: #00004d;"><img src="images/startAgain.png" width="17" height="17">&nbsp;&nbsp;START AGAIN</a></p>
+                        <p><a href="Index.html" style="text-decoration: none; font-size:16px; color: #00004d;"><img src="images/cancel.png" width="16" height="16">&nbsp;&nbsp;CANCEL</a></p>
+                    </div>
+                    <div class="column2">
+                        <button type="button" onclick="validateForm()" class="button">
+                            <p style="font-size:16px;">MAKE PAYMENT</p>
+                        </button>
+                        <img src="images/makepayment.png" style="width:18%;height:30%;"/>
+                    </div>
+                </div>
+                <br><br><br><br><br><hr>
+                <p class="para">&nbsp;&nbsp;Refunds and Returns</p>
+                <p class="para font">&nbsp;&nbsp;&nbsp;For more information visit our <a href="http://support.worldpay.com/support/kb/bg/transactionmanagement/tm5100.html" style="color: #00004d">Refunds and Returns Policy </a>.</p>
+                <div class="row">
+                    <div class="column1">
+                        <img src="images/worldpay.jpg" alt="WorldPay">
+                    </div>
+                    <div class="column3">
+                        <p>For help with your payment visit the <a href="https://www.worldpay.com/en-gb/enterprise-support" style="color: black">WorldPay Help </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="end">
+            <img src="images/question.png" alt="question" style="margin-top:240%;"/><br />
+            <img src="images/question.png" alt="question" style="margin-top:210%;"/>
+        </div>
+        <div class="footer">
+            <h1>Thank you for shopping at FlowerShop. Have a nice day</h1>
+        </div>
+    </form>
+</body>
+</html>
